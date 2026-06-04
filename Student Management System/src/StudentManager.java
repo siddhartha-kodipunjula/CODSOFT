@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class StudentManager {
 
-    private ArrayList<Student> students;
+    private final ArrayList<Student> students;
 
     public StudentManager() {
 
@@ -18,12 +18,9 @@ public class StudentManager {
     }
 
     public void displayStudents() {
-
         if (students.isEmpty()) {
-
             System.out.println(
                     "No Student Records Found");
-
             return;
         }
 
@@ -31,9 +28,22 @@ public class StudentManager {
                 "\nID | Name | Age | Course | Grade");
 
         for (Student student : students) {
-
             student.displayStudent();
         }
+    }
+
+    public void searchStudent(int studentId) {
+        for (Student student : students) {
+            if (student.getStudentId() == studentId) {
+                System.out.println(
+                        "\nStudent Found");
+                student.displayStudent();
+                return;
+            }
+        }
+
+        System.out.println(
+                "Student Not Found");
     }
 
     public ArrayList<Student> getStudents() {
