@@ -35,15 +35,13 @@ public class StudentManager {
     public void searchStudent(int studentId) {
         for (Student student : students) {
             if (student.getStudentId() == studentId) {
-                System.out.println(
-                        "\nStudent Found");
+                System.out.println("\nStudent Found");
                 student.displayStudent();
                 return;
             }
         }
 
-        System.out.println(
-                "Student Not Found");
+        System.out.println("Student Not Found");
     }
 
     public ArrayList<Student> getStudents() {
