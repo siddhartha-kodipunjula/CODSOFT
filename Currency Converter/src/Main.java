@@ -52,10 +52,10 @@ public class Main {
                                 converter.eurToInr(amount));
                         break;
 
-                    case 4:
+                        case 4:
                         System.out.println(
-                                "Converted Amount: €" +
-                                converter.inrToEur(amount));
+                            "Converted Amount: EUR " +
+                            converter.inrToEur(amount));
                         break;
 
                     case 5:
@@ -64,10 +64,10 @@ public class Main {
                                 converter.gbpToInr(amount));
                         break;
 
-                    case 6:
+                        case 6:
                         System.out.println(
-                                "Converted Amount: £" +
-                                converter.inrToGbp(amount));
+                            "Converted Amount: GBP " +
+                            converter.inrToGbp(amount));
                         break;
                 }
             }
