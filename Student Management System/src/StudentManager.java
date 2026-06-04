@@ -73,4 +73,22 @@ public class StudentManager {
     System.out.println(
             "Student Not Found");
 }
+public void removeStudent(int studentId) {
+
+    for (Student student : students) {
+
+        if (student.getStudentId() == studentId) {
+
+            students.remove(student);
+
+            System.out.println(
+                    "Student Removed Successfully");
+
+            return;
+        }
+    }
+
+    System.out.println(
+            "Student Not Found");
+}
 }
