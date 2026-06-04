@@ -1,6 +1,6 @@
 public class Student {
 
-    private int studentId;
+    private final int studentId;
     private String name;
     private int age;
     private String course;
