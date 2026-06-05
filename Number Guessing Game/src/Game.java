@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Game {
 
-    private int targetNumber;
+    private final int targetNumber;
 
     public Game() {
 
