@@ -1,8 +1,8 @@
 public class Question {
 
-    private String question;
-    private String[] options;
-    private int correctAnswer;
+    private final String question;
+    private final String[] options;
+    private final int correctAnswer;
 
     public Question(String question,
                     String[] options,
